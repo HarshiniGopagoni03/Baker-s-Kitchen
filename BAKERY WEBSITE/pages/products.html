@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="galery of products">
+    <meta name="keywords" content="bakery, pasteleria, shop, delivery, tortas, donas, desayunos, meriendas">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Bakers Kitchen</a>
+        <button
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container py-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/muffin-productos.jpg" class="card-img-top" alt="cupcake image"/>
+
+            <div class="card-body">
+              <h5 class="card-title">Muffins</h5>
+              <p class="card-text">
+                super spongy, filled with cream, jam, fruit, dulce de leche, chocolate and try one and you won't be able to stop.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="addToCart('Muffins', 150)">Add to Cart - Rs.150</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/donuts-productos.jpg" class="card-img-top" alt="donuts image"/>
+            <div class="card-body">
+              <h5 class="card-title">Donuts</h5>
+              <p class="card-text">
+                glazed, dipped and filled with dulce de leche, with chocolate, with chips, fruity and signature, there is everything and for all possible tastes.
+              </p>
+              
+<a href="#" class="btn btn-primary" onclick="addToCart('Donuts', 160)">Add to Cart - Rs.160</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/porcion-torta-productos.jpg" class="card-img-top" alt="slice of cake"/>
+            <div class="card-body">
+              <h5 class="card-title">Torta</h5>
+              <p class="card-text">
+                Made with a lot of love and dedication, taking care of every detail so that it is a birthday or not, like these cakes are a party.
+              </p>
+              
+<a href="#" class="btn btn-primary" onclick="addToCart('Torta', 150)">Add to Cart - Rs.230</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/cookie-productos.jpg" class="card-img-top" alt="cookies image"/>
+            <div class="card-body">
+              <h5 class="card-title">Cookies</h5>
+              <p class="card-text">
+                If you are one of those who is always craving something sweet, we have the perfect solution, our cookies.
+              </p>
+              
+<a href="#" class="btn btn-primary" onclick="addToCart('Cookies', 250)">Add to Cart - Rs.250</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/waffle-productos.jpg" class="card-img-top" alt="waffles image"/>
+            <div class="card-body">
+              <h5 class="card-title">Waffles</h5>
+              <p class="card-text">
+               If you are a fan of waffles or if you have never had one, you cannot miss the opportunity to try ours.
+
+
+              </p>
+              <a href="#" class="btn btn-primary" onclick="addToCart('Waffles', 100)">Add to Cart - Rs.100</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/budin-chocolate-productos.jpg" class="card-img-top" alt="chocolate loaf cake"/>
+            <div class="card-body">
+              <h5 class="card-title">Buddha</h5>
+              <p class="card-text">
+                Vanilla, chocolate, marbled, filled, to share or individual, crunchy or spongy, you choose.
+              </p>
+             <a href="#" class="btn btn-primary" onclick="addToCart('Buddha', 600)">Add to Cart - Rs.600</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/postre-vasito-productos.jpg" class="card-img-top" alt="Dessert in a glass"/>
+            <div class="card-body">
+              <h5 class="card-title">Desserts in glasses</h5>
+              <p class="card-text">
+                You have the Classics (chocotorta, bread pudding, cheesecake) or try the new flavors that rotate, you will always have a new one to try.
+              </p>
+             <a href="#" class="btn btn-primary" onclick="addToCart('Desserts in glasses', 180)">Add to Cart - Rs.180</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/tartita-frutal-productos.jpg" class="card-img-top" alt="fruit tart image"/>
+            <div class="card-body">
+              <h5 class="card-title">Fruit Tarts</h5>
+              <p class="card-text">
+                Cakes and tartlets made with seasonal fruit are an ideal combination between the freshness of fresh fruit and the sweetness of their fillings.
+              </p>
+              
+             <a href="#" class="btn btn-primary" onclick="addToCart('Fruit Tarts', 110)">Add to Cart - Rs.110</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/galleta-arroz-productos.jpg" class="card-img-top" alt="Chocolate dipped rice cake"/>
+            <div class="card-body">
+              <h5 class="card-title">Dipped rice crackers</h5>
+              <p class="card-text">
+                Our latest creation, if you thought that rice crackers don't taste like anything, it's because you haven't tried THESE rice crackers.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="addToCart('Dipped rice crackers', 150)">Add to Cart - Rs.150</a>
+<a href="#" class="btn btn-primary" onclick="viewCart()">View Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center bg-dark">
+      <div class="redes">
+        <a href="#"><i class="redes--color1 fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="redes--color2 fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="redes--color3 fa-brands fa-twitter"></i></a>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Add this script at the end of your HTML body or in a separate JavaScript file -->
+<!-- Add this script at the end of your HTML body -->
+<script>
+  // Initialize an empty cart array
+  let cart = [];
+
+  // Function to add a product to the cart
+  function addToCart(productName, productPrice) {
+    const item = { name: productName, price: productPrice };
+    cart.push(item);
+    alert(`Added ${productName} to the cart!`);
+  }
+
+  // Function to display the cart contents
+  function viewCart() {
+    let total = 0;
+    let cartDetails = "Cart:\n\n";
+
+    for (const item of cart) {
+      cartDetails += `${item.name} - Rs.${item.price}\n`;
+      total += item.price;
+    }
+
+    if (cart.length === 0) {
+      cartDetails = "Your cart is empty.";
+    } else {
+      cartDetails += `\nTotal: Rs.${total}`;
+    }
+
+    alert(cartDetails);
+  }
+</script>
+
+  
+</body>
+</html>
